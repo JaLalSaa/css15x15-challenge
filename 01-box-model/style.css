@@ -1,0 +1,116 @@
+/* === Reset box model and remove default margin/padding for all elements === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Styles for the <body> element === */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  background-color: lightsteelblue;
+  font-size: 14px; /* Default desktop font size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* === Wrapper around container and side labels === */
+.wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #22307B;
+}
+
+/* === Main container representing the box model === */
+.container {
+  background-color: #22307B;
+  width: 60vw;
+  min-width: 0;
+}
+
+/* === Shared padding for margin, padding, and border elements === */
+.margin, .padding, .border {
+  padding: 0 27px 27px 27px;
+}
+
+/* === Margin layer styling === */
+.margin {
+  background-color: #31BAE6;
+  border: 2px dashed white;
+}
+
+/* === Border layer styling === */
+.border {
+  background-color: #272E64;
+  border: 2px dotted white;
+}
+
+/* === Padding layer styling === */
+.padding {
+  background-color: #3062A1;
+  border: 2px solid yellow;
+}
+
+/* === Content layer styling === */
+.content {
+  background-color: #ED8C3B;
+  padding: 10px;
+  border: 2px solid red;
+  text-align: center;
+}
+
+/* === Paragraph (<p>) styling inside all layers === */
+p {
+  padding: 5px 0;
+}
+
+/* === Side labels (Left and Right) styling === */
+.side {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  max-width: 30px;
+}
+
+/* === Spacing for left and right side labels === */
+.left, .right{
+  margin: 0 10px;
+}
+
+/* === Place the top and bottom side in the middle. === */
+.top, .bottom {
+  text-align: center;
+  margin: 10px 0;
+  padding: 0;
+}
+
+/* ===== Responsive styles ===== */
+@media (max-width: 600px) {
+  body {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 70vw;
+  }
+
+  .margin, .padding, .border {
+    padding: 0 15px 15px 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 60vw;
+  }
+
+  .margin, .padding, .border {
+    padding: 0 35px 35px 35px;
+  }
+}
