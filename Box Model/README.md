@@ -3,7 +3,7 @@
 A visual and interactive playground that demonstrates the **CSS Box Model** concept using HTML and CSS.  
 This project aims to help beginners clearly understand how content, padding, border, and margin interact in the layout of elements.
 
-![Screenshot of the project](./screenshot.png) <!-- يمكنك إضافة لقطة شاشة للمشروع هنا -->
+![Screenshot of the project](box-model-preview.jpg) <!-- يمكنك إضافة لقطة شاشة للمشروع هنا -->
 
 ---
 
