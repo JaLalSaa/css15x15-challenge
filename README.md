@@ -19,7 +19,7 @@ Each project focuses on a key CSS concept or layout technique. The goal is to st
 
 | Day | Project Title             | Folder                             | Status            |
 |-----|---------------------------|------------------------------------|-------------------|
-| 1️⃣ | Box Model Playground      | [`Box Model`](01-box-model)     | ✅ Complete        |
+| 1️⃣ | Box Model Playground      | [`01-box-model`](01-box-model)     | ✅ Complete        |
 | 2️⃣ | Fancy Buttons             | [`02-buttons`](02-buttons)         | 🔒 Coming soon     |
 | 3️⃣ | Card Layout Design        | [`03-card-design`](03-card-design) | 🔒 Coming soon     |
 | 4️⃣ | Navbar with Flexbox       | [`04-navbar`](04-navbar)           | 🔒 Coming soon     |
