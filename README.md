@@ -41,7 +41,9 @@ Each project focuses on a key CSS concept or layout technique. The goal is to st
 
 Each project is inside its own folder with:
 
-📁 project-folder/ ├── index.html └── style.css
+📁 project-folder/ 
+├── index.html 
+└── style.css
 
 ---
 
