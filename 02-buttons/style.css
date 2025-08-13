@@ -1,33 +1,33 @@
-/* Reset & Base */
+/* === Reset & Base Styles === */
 * {
     margin: 0;
     padding: 0;
     -webkit-tap-highlight-color: transparent;
     box-sizing: border-box;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont;
 }
 
 body {
     background-color: #090809;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont;
 }
 
-/* Headings */
+/* === Headings === */
 h1,
 p {
     padding-left: 1rem;
     font-weight: 400;
 }
 
-/* Main Grid Layout */
+/* === Main Grid Layout === */
 #main-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
     padding: 1rem;
 }
 
-/* === Button Set 1 (Social) === */
+/* === Button Set 1: Social Buttons === */
 
 /* Container */
 .button-container-1 {
@@ -64,51 +64,26 @@ p {
 }
 
 /* Variants */
-.discord {
-    background-color: #5865f2;
-    color: #fff;
-    border-radius: 100% 0.125rem 0.125rem 0.125rem;
-    padding: 1.2em 0.5em 0.5em 1.2em;
-}
-
-.github {
-    background-color: #333;
-    color: #fff;
-    border-radius: 0.125rem 100% 0.125rem 0.125rem;
-    padding: 1.2em 1.2em 0.5em 0.5em;
-}
-
-.twitter {
-    background-color: #1da1f2;
-    color: #fff;
-    border-radius: 0.125rem 0.125rem 100% 0.125rem;
-    padding: 0.5em 1.2em 1.2em 0.5em;
-}
-
-.instagram {
-    background-color: #e1306c;
-    color: #fff;
-    border-radius: 0.125rem 0.125rem 0.125rem 100%;
-    padding: 0.5em 0.5em 1.2em 1.2em;
-}
+.discord { background-color: #5865f2; color: #fff; border-radius: 100% 0.125rem 0.125rem 0.125rem; padding: 1.2em 0.5em 0.5em 1.2em; }
+.github { background-color: #333; color: #fff; border-radius: 0.125rem 100% 0.125rem 0.125rem; padding: 1.2em 1.2em 0.5em 0.5em; }
+.twitter { background-color: #1da1f2; color: #fff; border-radius: 0.125rem 0.125rem 100% 0.125rem; padding: 0.5em 1.2em 1.2em 0.5em; }
+.instagram { background-color: #e1306c; color: #fff; border-radius: 0.125rem 0.125rem 0.125rem 100%; padding: 0.5em 0.5em 1.2em 1.2em; }
 
 /* Hover Effects */
-.discord:hover,
-.github:hover,
-.twitter:hover,
-.instagram:hover {
+.discord:hover, .github:hover, .twitter:hover, .instagram:hover {
     background-color: #fff;
     color: #333;
     transform: scale(1.02);
     box-shadow: 0 0 0.5rem rgba(117, 117, 117, 0.644);
 }
 
+/* Individual Hover Colors */
 .discord:hover { color: #5865f2; }
 .github:hover { color: #333; }
 .twitter:hover { color: #1da1f2; }
 .instagram:hover { color: #e1306c; }
 
-/* === Button Set 2 (Expanding Circle) === */
+/* === Button Set 2: Expanding Circle Button === */
 
 /* Container */
 .button-container-2 {
@@ -158,16 +133,77 @@ p {
 }
 
 /* Hover Effect */
-.btn-2:hover {
-    color: #fff;
+.btn-2:hover { color: #fff; }
+.btn-2:hover::before { width: 10rem; height: 10rem; }
+
+/* === Button Set 3: Striped Fancy Button === */
+
+/* Container */
+.button-container-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #e8e9e9;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 0.3rem rgba(255, 255, 255, 0.644);
+    height: 30vh;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.btn-2:hover::before {
-    width: 10rem;
-    height: 10rem;
+/* Base Style */
+.btn-3 {
+    border-radius: 10px;
+    background-color: #1b1b1b;
+    color: #adadad;
+    letter-spacing: 1.5px;
+    border: 1px solid #000000;
+    font-size: 1rem;
+    padding: .5em 2em .7em;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
 }
 
-/* === Responsive (Mobile) === */
+.btn-3 span { position: relative; z-index: 2; transition: color 0.4s ease; }
+
+/* Left Stripe */
+.btn-3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: 50px;
+    height: 100%;
+    transform: skewX(-45deg);
+    background-color: #e6e4e4;
+    z-index: 1;
+    transition: left 0.6s ease-out; 
+}
+
+/* Right Stripe */
+.btn-3::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 100%;
+    transform: skewX(-45deg);
+    background-color: #adadad;
+    z-index: 1;
+    transition: right 0.6s ease-out; 
+}
+
+/* Hover Effects */
+.btn-3:hover::before { left: 100%; }
+.btn-3:hover::after { right: 100%; }
+.btn-3:hover span { color: #f5f5f5; }
+
+/* === Responsive: Mobile Screens === */
 @media (max-width: 600px) {
     #main-container {
         grid-template-columns: 1fr;
