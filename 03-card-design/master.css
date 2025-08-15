@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 1rem;
+}
+
+.card-container {
+    width: 90%;
+    max-width: 300px;
+    aspect-ratio: 2 / 3;
+    position: relative;
+    perspective: 1000px;
+}
+
+.part-1 {
+    background-image: url("imgs/main.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 2;
+    transition: transform 0.6s;
+}
+
+.part-1,
+.part-2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: bottom center;
+    transform-style: preserve-3d;
+}
+
+.part-2 {
+    align-self: center;
+    background-color: #227dc2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.5rem;
+    color: #ffd7cd;
+    font-size: clamp(0.7rem, 1.5vw, 0.9rem);
+    letter-spacing: 1px;
+    font-weight: 500;
+    text-align: left;
+    z-index: 1;
+    transition: transform 0.6s;
+}
+
+.part-1::before {
+    content: "Kano Nakajima";
+    position: absolute;
+    bottom: 18%;
+    left: 1rem;
+    width: auto;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    letter-spacing: 0.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #f7dad3;
+}
+
+.part-1::after {
+    content: "illustrator";
+    position: absolute;
+    bottom: 14%;
+    right: 2rem;
+    width: auto;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-weight: 500;
+    color: #f7dad3;
+}
+
+.top {
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.top p {
+    font-weight: 400;
+}
+
+#name {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: clamp(1rem, 2.5vw, 1.1rem);
+    font-weight: 700;
+    color: #f7dad3;
+}
+
+.part-2 .E-mail {
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.part-2 .more-info {
+    font-size: clamp(0.6rem, 1.5vw, 0.75rem);
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.part-1:hover {
+    transform: rotate(15deg) translateX(30%);
+}
+
+.part-1:hover ~ .part-2 {
+    transform: rotate(-15deg) translateX(-30%);
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        width: 50%;
+        max-width: 200px;
+        aspect-ratio: 2 / 3;
+    }
+
+    .part-1::before,
+    .part-1::after {
+        font-size: clamp(0.5rem, 2vw, 1rem) !important;
+    }
+
+    .part-2, 
+    .part-2 p, 
+    .part-2 .E-mail, 
+    .part-2 .more-info p, 
+    #name {
+        font-size: clamp(0.2rem, 1.5vw, 0.8rem) !important;
+    }
+
+    .part-1:hover {
+        transform: rotate(15deg) translateX(30%);
+    }
+
+    .part-1:hover ~ .part-2 {
+        transform: rotate(-15deg) translateX(-30%);
+    }
+}
+
