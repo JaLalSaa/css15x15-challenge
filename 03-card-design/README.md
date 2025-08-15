@@ -4,7 +4,10 @@ A **stylish interactive card animation** built using **pure HTML & CSS**.
 This project features two stacked cards — the front card rotates and slides away to reveal the back card containing personal or contact information.  
 Perfect for learning about transforms, transitions, responsive design, and creative hover effects.
 
-![Screenshot of the project](card-preview.jpg)
+<p float="left">
+  <img src="imgs/card-preview.png" width="300" />
+  <img src="imgs/card-preview2.png" width="300" />
+</p>
 
 ---
 
