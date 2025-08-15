@@ -56,6 +56,7 @@ Perfect for learning about transforms, transitions, responsive design, and creat
 ## 🧪 How to Use
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/JaLalSaa/css15x15-challenge.git
 ````
@@ -64,7 +65,8 @@ Perfect for learning about transforms, transitions, responsive design, and creat
 
    ```bash
    cd css15x15-challenge/XX-card-animation
-   ```
+````
+
 3. Open `index.html` in your browser.
 
 ---
@@ -79,5 +81,4 @@ Created with ❤️ by **JaLalSaa**
 
 This project is licensed under the **MIT License** — feel free to use and modify for personal or commercial purposes.
 
-```
 
