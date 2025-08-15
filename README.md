@@ -21,7 +21,7 @@ Each project focuses on a key CSS concept or layout technique. The goal is to st
 |-----|---------------------------|------------------------------------|-------------------|
 | 1️⃣ | Box Model Playground      | [`01-box-model`](01-box-model)     | ✅ Complete        |
 | 2️⃣ | Fancy Buttons             | [`02-buttons`](02-buttons)         | ✅ Complete     |
-| 3️⃣ | Card Layout Design        | [`03-card-design`](03-card-design) | 🔒 Coming soon     |
+| 3️⃣ | Card Layout Design        | [`03-card-design`](03-card-design) | ✅ Complete     |
 | 4️⃣ | Navbar with Flexbox       | [`04-navbar`](04-navbar)           | 🔒 Coming soon     |
 | 5️⃣ | CSS Positioning Demo      | [`05-position`](05-position)       | 🔒 Coming soon     |
 | 6️⃣ | Color Palette Generator   | [`06-color-palette`](06-color-palette) | 🔒 Coming soon     |
