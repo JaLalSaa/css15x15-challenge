@@ -5,8 +5,8 @@ This project features two stacked cards — the front card rotates and slides aw
 Perfect for learning about transforms, transitions, responsive design, and creative hover effects.
 
 <p float="left">
-  <img src="imgs/card-preview.png" width="300" />
-  <img src="imgs/card-preview2.png" width="300" />
+  <img src="imgs/card-preview-0.png" width="300" />
+  <img src="imgs/card-preview-1.png" width="300" />
 </p>
 
 ---
