@@ -56,17 +56,13 @@ Perfect for learning about transforms, transitions, responsive design, and creat
 ## 🧪 How to Use
 
 1. Clone this repository:
-
    ```bash
    git clone https://github.com/JaLalSaa/css15x15-challenge.git
-````
-
+   ```
 2. Navigate to the folder:
-
    ```bash
-   cd css15x15-challenge/XX-card-animation
-````
-
+   cd css15x15-challenge/02-buttons
+   ```
 3. Open `index.html` in your browser.
 
 ---
