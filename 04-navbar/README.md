@@ -9,7 +9,7 @@ This project demonstrates different navbar layouts:
 Perfect for practicing **Flexbox layouts, spacing techniques, hover effects, and button styling**.
 
 <p float="left">
-  <img src="imgs/navbarPreview.png" width="300" />
+  <img src="navbarPreview.png" width="300" />
 </p>
 
 ---
